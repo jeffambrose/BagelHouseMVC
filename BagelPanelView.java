@@ -53,4 +53,12 @@ public class BagelPanelView extends JPanel
 		else
 			return "wheat";
 	}
+	
+	public String getBagelType(String type)
+	{
+		if(type.equals("white"))
+			return "white";
+		else
+			return "wheat";
+	}
 }

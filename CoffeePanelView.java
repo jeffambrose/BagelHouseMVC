@@ -56,13 +56,29 @@ public class CoffeePanelView extends JPanel
     {
     	int type;
     	if(noCoffee.isSelected())
-    	type=0;
+    		type=0;
     	else if(regularCoffee.isSelected())
     		type = 1;
-    		else if(decafCoffee.isSelected())
-    			type = 2;
-    		else
-    			type = 3;
+		else if(decafCoffee.isSelected())
+			type = 2;
+		else
+			type = 3;
+    	
+    	return type;	
+    }
+    
+    public int testSelection(int select)
+    {
+    	int type;
+    	if(select == 0)
+    		type=0;
+    	else if(select == 1)
+    		type = 1;
+		else if(select == 2)
+			type = 2;
+		else
+			type = 3;
+    	
     	return type;	
     }
 }

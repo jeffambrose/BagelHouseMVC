@@ -58,4 +58,22 @@ public class ToppingPanelView extends JPanel
 		                     
 	   return topping;	            
    }
+   
+   public boolean[] testToppingType(boolean[] bool)
+   {
+	   boolean[] topping = new boolean[4];
+	   for(int i=0; i < topping.length; i++ )
+		   topping[i]=false;
+	   
+	   if(bool[0])
+		   topping[0]=true;
+	   if(bool[1])
+		   topping[1]=true;
+	   if(bool[2])
+		   topping[2]=true;
+	    if(bool[3])
+	       topping[3]=true;
+		                     
+	   return topping;	            
+   }
 }

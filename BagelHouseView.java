@@ -1,6 +1,7 @@
 package bagelhousemvc;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.text.DecimalFormat;
@@ -119,6 +120,22 @@ public class BagelHouseView extends JFrame {
 
 	public void AddCalcListener(ActionListener addCalcListener) {
 		// TODO Auto-generated method stub
-		button.addActionListener(addCalcListener);
+		calcButton.addActionListener(addCalcListener);
 	}
+
+	public String getbType() {
+		String bType = bagels.getType();
+		return bType;
+	}
+
+	public int getcType() {
+		int cType = coffee.selection();
+		return cType;
+	}
+
+	public boolean[] getToppings() {
+		boolean[] result = toppings.getToppingType();
+		return result;
+	}
+
 }
